@@ -9,7 +9,7 @@ const montserrat = Montserrat({ subsets: ['latin'] })
 export default function Component() {
   return (
     <div className={`min-h-screen bg-[#1b1b1f] text-white ${montserrat.className}`}>
-      <header className="container mx-auto px-4 py-6 flex justify-between items-center absolute top-0 left-0 right-0 z-10">
+      <header className="container mx-auto px-4 py-6 flex justify-between items-center">
         <div className="flex items-center space-x-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
