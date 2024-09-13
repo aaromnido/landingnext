@@ -3,7 +3,7 @@ import { Github, Twitter } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900 py-12">
+    <footer className="bg-gray-900 py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
@@ -80,7 +80,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+        <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
           <p className="text-sm">&copy; 2023 GitMergeTool. All rights reserved.</p>
         </div>
       </div>

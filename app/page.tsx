@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import { CTASection } from "./components/CTASection"
 
 export default function Component() {
   return (
@@ -32,7 +33,7 @@ export default function Component() {
         </section>
 
         <section className="container mx-auto px-4 py-20">
-          <h2 className="text-4xl font-bold mb-12 text-center">Why GitMergeTool?</h2>
+          <h2 className="text-4xl font-light mb-12 text-center">Why GitMergeTool?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="bg-purple-800 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
@@ -87,7 +88,7 @@ export default function Component() {
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
+                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
                   />
                 </svg>
               </div>
@@ -98,7 +99,7 @@ export default function Component() {
         </section>
 
         <section className="container mx-auto px-4 py-20">
-          <h2 className="text-4xl font-bold mb-12 text-center">Compatible with your favorite tools</h2>
+          <h2 className="text-4xl font-light mb-12 text-center">Compatible with your favorite tools</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
               { name: "GitHub", logo: "https://seeklogo.com/images/G/github-logo-5F384D0265-seeklogo.com.png" },
@@ -119,7 +120,7 @@ export default function Component() {
         </section>
 
         <section className="container mx-auto px-4 py-20">
-          <h2 className="text-4xl font-bold mb-12 text-center">What developers are saying</h2>
+          <h2 className="text-4xl font-light mb-12 text-center">What developers are saying</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-800 rounded-lg p-6 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 opacity-20"></div>
@@ -127,7 +128,21 @@ export default function Component() {
                 <p className="mb-4 text-lg font-light">
                   "GitMergeTool has revolutionized our workflow. Resolving conflicts is now a breeze, saving us countless hours of frustration."
                 </p>
-                <footer className="font-semibold">- Sarah Johnson, Senior Developer at TechCorp</footer>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
+                    <Image 
+                      src="/avatars/sarah-johnson.jpg" 
+                      alt="Sarah Johnson" 
+                      width={48} 
+                      height={48}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Sarah Johnson</p>
+                    <p className="text-sm text-gray-400">Senior Developer at TechCorp</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="bg-gray-800 rounded-lg p-6 relative overflow-hidden">
@@ -136,11 +151,27 @@ export default function Component() {
                 <p className="mb-4 text-lg font-light">
                   "As a team lead, GitMergeTool has significantly reduced our merge times and improved code quality. It's a must-have for any development team."
                 </p>
-                <footer className="font-semibold">- Michael Chen, Lead Developer at InnoSoft</footer>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
+                    <Image 
+                      src="/avatars/michael-chen.jpg" 
+                      alt="Michael Chen" 
+                      width={48} 
+                      height={48}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Michael Chen</p>
+                    <p className="text-sm text-gray-400">Lead Developer at InnoSoft</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
+
+        <CTASection />
       </main>
     </div>
   )
