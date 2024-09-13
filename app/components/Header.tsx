@@ -28,7 +28,7 @@ export function Header() {
           <Link href="/features" className="hover:text-purple-400 font-medium">
             Features
           </Link>
-          <Link href="#" className="hover:text-purple-400 font-medium">
+          <Link href="/pricing" className="hover:text-purple-400 font-medium">
             Pricing
           </Link>
           <Link href="#" className="hover:text-purple-400 font-medium">
