@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Check } from "lucide-react"
+import { Check, Eye, Github, Brain } from "lucide-react"
 
 export default function FeaturesPage() {
   return (
@@ -20,14 +20,17 @@ export default function FeaturesPage() {
         <h2 className="text-4xl font-bold mb-12 text-center">Key Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <FeatureCard
+            icon={<Eye className="w-12 h-12 text-purple-500" />}
             title="Visual Conflict Resolution"
             description="Intuitive interface for resolving merge conflicts directly on GitHub."
           />
           <FeatureCard
+            icon={<Github className="w-12 h-12 text-purple-500" />}
             title="GitHub Integration"
             description="Works seamlessly within your existing GitHub workflow."
           />
           <FeatureCard
+            icon={<Brain className="w-12 h-12 text-purple-500" />}
             title="Intelligent Code Analysis"
             description="Automatic suggestions for resolving conflicts based on code context."
           />
@@ -72,9 +75,12 @@ export default function FeaturesPage() {
   )
 }
 
-function FeatureCard({ title, description }: { title: string, description: string }) {
+function FeatureCard({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) {
   return (
     <div className="bg-gray-800 rounded-lg p-6 text-center hover:bg-gray-900 transition-colors duration-300 border border-purple-500/20 shadow-[0_0_15px_rgba(168,85,247,0.5)]">
+      <div className="flex justify-center mb-4">
+        {icon}
+      </div>
       <h3 className="text-2xl font-semibold mb-4">{title}</h3>
       <p className="text-gray-300 font-light">{description}</p>
     </div>
