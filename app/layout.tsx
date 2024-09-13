@@ -1,9 +1,15 @@
 import { Header } from "./components/Header"
 import { Footer } from "./components/Footer"
 import { Montserrat } from 'next/font/google'
-import './globals.css'  // Añade esta línea
+import './globals.css'
+import { Metadata } from 'next'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
+
+export const metadata: Metadata = {
+  title: 'GitMergeTool',
+  description: 'Resolve Git conflicts with ease on GitHub',
+}
 
 export default function RootLayout({
   children,

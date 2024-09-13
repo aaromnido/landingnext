@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function Component() {
   return (
-    <div className="min-h-screen bg-[#1b1b1f] text-white">
+    <div className="min-h-screen bg-[#111827] text-white">
       <main>
         <section className="relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-purple-900 to-gray-900 z-0"></div>

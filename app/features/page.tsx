@@ -3,14 +3,17 @@ import { Check } from "lucide-react"
 
 export default function FeaturesPage() {
   return (
-    <main>
-      <section className="container mx-auto px-4 py-20">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-center leading-tight">
-          Features of <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">GitMergeTool</span>
-        </h1>
-        <p className="text-xl mb-12 text-gray-300 max-w-2xl mx-auto text-center font-light">
-          Discover how GitMergeTool can revolutionize your Git workflow and make conflict resolution easier than ever.
-        </p>
+    <main className="bg-[#111827] text-white">
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-purple-900 to-gray-900 z-0"></div>
+        <div className="container mx-auto px-4 py-32 relative z-10">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-center leading-tight">
+            Features of <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">GitMergeTool</span>
+          </h1>
+          <p className="text-xl mb-12 text-gray-300 max-w-2xl mx-auto text-center font-light">
+            Discover how GitMergeTool can revolutionize your Git workflow and make conflict resolution easier than ever.
+          </p>
+        </div>
       </section>
 
       <section className="container mx-auto px-4 py-20">
@@ -31,7 +34,7 @@ export default function FeaturesPage() {
         </div>
       </section>
 
-      <section className="container mx-auto px-4 py-20 bg-gray-900">
+      <section className="container mx-auto px-4 py-20">
         <h2 className="text-4xl font-bold mb-12 text-center">Plan Comparison</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <PlanCard
