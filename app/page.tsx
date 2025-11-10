@@ -13,6 +13,8 @@ export default function Component() {
           <div className="container mx-auto px-4 py-32 relative z-10">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-center leading-tight">
               Resolve Git conflicts <br />
+              Resolve Git conflicts <br />
+              Resolve Git conflicts <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
                 with ease on GitHub
               </span>
